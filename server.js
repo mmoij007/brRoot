@@ -76,10 +76,6 @@ app.get('/logout', (req, res) => {
 });
 
 // Nuevas rutas para páginas estáticas
-app.get('/quien-soy', (req, res) => {
-  res.render('quien-soy');
-});
-
 app.get('/trainings', (req, res) => {
   res.render('trainings');
 });
