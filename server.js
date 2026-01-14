@@ -75,6 +75,27 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
+// Nuevas rutas para páginas estáticas
+app.get('/trainings', (req, res) => {
+  res.render('trainings');
+});
+
+app.get('/training/1', (req, res) => {
+  res.render('training-1');
+});
+
+app.get('/training/2', (req, res) => {
+  res.render('training-2');
+});
+
+app.get('/training/3', (req, res) => {
+  res.render('training-3');
+});
+
+app.get('/training/4', (req, res) => {
+  res.render('training-4');
+});
+
 // Socket.io
 io.on('connection', (socket) => {
   socket.on('register user', (username) => {
